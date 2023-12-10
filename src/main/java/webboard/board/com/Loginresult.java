@@ -50,7 +50,7 @@ public class Loginresult extends HttpServlet {
 		}
 		try {
 			/*データベースに接続するConnectionオブジェクトの取得 */
-			con = DriverManager.getConnection(URL, USER, PASS);
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/[DBテーブル名]", "[MySQLユーザー名]", "[MySQLパスワード]");
 			/* データベース操作を行うためのStatementオブジェクトの取得 */
 			stm = con.createStatement();
 			/* 入力されたIDとパスワードの値を取得 */
