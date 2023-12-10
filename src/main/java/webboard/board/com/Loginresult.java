@@ -29,9 +29,6 @@ public class Loginresult extends HttpServlet {
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 
-		final String URL = "jdbc:mysql://localhost:3306/sampledb";
-		final String USER = "sample";
-		final String PASS = "Ppr0@0905";
 
 		Connection con = null;
 		Statement stm = null;
