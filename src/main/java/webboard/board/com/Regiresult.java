@@ -48,35 +48,25 @@ public class Regiresult extends HttpServlet {
 				+ " }"
 				+ ".btn {\r\n"
 				+ "  display       : inline-block;\r\n"
-				+ "  border-radius : 5%;          /* 角丸       */\r\n"
-				+ "  font-size     : 10px;        /* 文字サイズ */\r\n"
+				+ "  border-radius : 5%;          \r\n"
+				+ "  font-size     : 10px;        \r\n"
 				+ "  text-align    : center;      /* 文字位置   */\r\n"
-				+ "  cursor        : pointer;     /* カーソル   */\r\n"
-				+ "  padding       : 12px 12px;   /* 余白       */\r\n"
-				+ "  background    : #E7E7E7;     /* 背景色     */\r\n"
-				+ "  color         : #000000;    /* 文字色     */\r\n"
-				+ "  line-height   : 1em;         /* 1行の高さ  */\r\n"
-				+ "  transition    : .3s;         /* なめらか変化 */\r\n"
-				+ "  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */\r\n"
-				+ "  border        : 2px solid #000000;    /* 枠の指定 */\r\n"
+				+ "  cursor        : pointer;     \r\n"
+				+ "  padding       : 12px 12px;   \r\n"
+				+ "  background    : #E7E7E7;     \r\n"
+				+ "  color         : #000000;     \r\n"
+				+ "  line-height   : 1em;         \r\n"
+				+ "  transition    : .3s;         \r\n"
+				+ "  box-shadow    : 6px 6px 3px #666666;  /\r\n"
+				+ "  border        : 2px solid #000000;    \r\n"
 				+ "  margin:10px;	\r\n"
 				+ "}\r\n"
 				+ ".btn:hover {\r\n"
-				+ "  box-shadow    : none;        /* カーソル時の影消去 */\r\n"
-				+ "  color         : #000000;      /* 背景色     */\r\n"
-				+ "  background    : #E7E7E7;     /* 文字色     */\r\n"
-				+ "  border-radius : 5%;          /* 角丸       */\r\n"
+				+ "  box-shadow    : none;        \r\n"
+				+ "  color         : #000000;     \r\n"
+				+ "  background    : #E7E7E7;     \r\n"
+				+ "  border-radius : 5%;          /\r\n"
 				+ "}</style>");
-		
-		//Linux用
-				final String URL = "jdbc:mysql://localhost:3306/sampledb";
-				final String USER = "sample";
-				final String PASS = "Ppr0@0905";
-				
-//		String sql = "insert into member values(6,'梅原',75);";
-//		String sql2 = "insert into member values(7,'柿町',90);";
-//		String sql3 = "select * from member";
-//		String sql4 = "insert into member values(?,?,?)";
 
 		Object reid = (String)req.getAttribute("id");
 		Object repassword = (String)req.getAttribute("password");
@@ -153,7 +143,7 @@ public class Regiresult extends HttpServlet {
 		}
 		try {
 			/* データベースに接続するConnectionオブジェクトの取得 */
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sampledb", "sample", "Ppr0@0905");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/[DBテーブル名]", "[MySQLユーザー名]", "[MySQLパスワード]");
 			/* データベース操作を行うためのStatementオブジェクトの取得 */
 			stm = con.createStatement();
 			/* SQL()を実行 */
