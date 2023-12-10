@@ -137,7 +137,7 @@ public class Comwrite extends HttpServlet {
 			}
 			try {
 				/*データベースに接続するConnectionオブジェクトの取得 */
-				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sampledb", "sample", "Ppr0@0905");
+				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/[DBテーブル名]", "[MySQLユーザー名]", "[MySQLパスワード]");
 				/* データベース操作を行うためのStatementオブジェクトの取得 */
 				stm = con.createStatement();
 				/* SQL()を実行 */
