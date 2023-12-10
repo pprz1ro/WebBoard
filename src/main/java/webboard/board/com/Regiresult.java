@@ -50,7 +50,7 @@ public class Regiresult extends HttpServlet {
 				+ "  display       : inline-block;\r\n"
 				+ "  border-radius : 5%;          \r\n"
 				+ "  font-size     : 10px;        \r\n"
-				+ "  text-align    : center;      /* 文字位置   */\r\n"
+				+ "  text-align    : center;      \r\n"
 				+ "  cursor        : pointer;     \r\n"
 				+ "  padding       : 12px 12px;   \r\n"
 				+ "  background    : #E7E7E7;     \r\n"
