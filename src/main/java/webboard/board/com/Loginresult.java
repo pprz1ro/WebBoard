@@ -126,7 +126,7 @@ public class Loginresult extends HttpServlet {
 
 			out.println("<html>");
 			out.println("<head>");
-			out.println("<title>確認画面</title>");
+			out.println("<title>Login Successful</title>");
 			out.println("</head>");
 			out.println("<body>");
 			out.println("<div class=\"boardwall\">");
@@ -151,7 +151,7 @@ public class Loginresult extends HttpServlet {
 		} else if (!(getid.equals(dbid))) {
 			out.println("<html>");
 			out.println("<head>");
-			out.println("<title>確認画面</title>");
+			out.println("<title>Login Failure</title>");
 			out.println("</head>");
 			out.println("<body>");
 			out.println("<div class=\"boardwall\">");
@@ -168,7 +168,7 @@ public class Loginresult extends HttpServlet {
 		} else if (getid.equals(dbid) && !(getpass.equals(dbpass))) {
 			out.println("<html>");
 			out.println("<head>");
-			out.println("<title>確認画面</title>");
+			out.println("<title>Login Failure</title>");
 			out.println("</head>");
 			out.println("<body>");
 			out.println("<div class=\"boardwall\">");
