@@ -91,7 +91,7 @@ public class Regiresult extends HttpServlet {
 				reage==emp||regender==emp||reselfinf==emp) {
 			out.println("<html>");
 			out.println("<head>");
-			out.println("<title>確認画面</title>");
+			out.println("<title>Account registration failued</title>");
 			out.println("</head>");
 			out.println("<body>");
 			out.println("<div class=\"boardwall\">");
@@ -106,7 +106,7 @@ public class Regiresult extends HttpServlet {
 		}else if(iid<6||iid>12||ipass<6||ipass>12||iname>10||iage>3||iselfinf>400) {
 			out.println("<html>");
 			out.println("<head>");
-			out.println("<title>確認画面</title>");
+			out.println("<title>Account registration failued</title>");
 			out.println("</head>");
 			out.println("<body>");
 			out.println("<div class=\"boardwall\">");
