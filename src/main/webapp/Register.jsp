@@ -102,7 +102,7 @@ form .border .input-box input {
 </head>
 <body>
 	<div class="boardwall">
-		<div class="title">Profile registration</div>
+		<div class="title">Profile Registration</div>
 		<br />
 		<form action="/WebBoard1126/Regicheck" method="post">
 			<div class="border">
