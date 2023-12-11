@@ -98,13 +98,9 @@ public class Regidelete extends HttpServlet {
 			stm = con.createStatement();
 			/* SQL()を実行 */
 			int count = stm.executeUpdate(sql);
-			rs = stm.executeQuery("select * from written WHERE id =" + "'" + id + "'");
-			/* 得られた結果をレコードごとに表示 */
-			while (rs.next()) {
-				name = rs.getString("name");
-				nowtime = rs.getString("nowtime");
-				written = rs.getString("written");
-			}
+
+			/* 作成済みのsessionを削除*/
+			session.invalidate();
 
 		} catch (Exception e) {
 			e.printStackTrace();
