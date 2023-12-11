@@ -172,13 +172,13 @@ public class Regiresult extends HttpServlet {
 				out.println("</head>");
 				out.println("<body>");
 				out.println("<div class=\"boardwall\">");
-				out.println("ID・パスワード・プロフィールの登録は以下の通り登録されました。</br>");
-				out.println("ID：<strong>" + reid + "</strong><br/>");
-				out.println("password：<strong>" + repassword + "</strong><br/>");
-				out.println("ユーザー名：<strong>" + rename + "</strong><br/>");
-				out.println("年齢：<strong>" + reage + "</strong><br/>");
-				out.println("性別：<strong>" + regender + "</strong><br/>");
-				out.println("自己紹介：<strong>" + reselfinf + "</strong><br/>");
+				out.println("<span>ID・パスワード・プロフィールの登録は以下の通り登録されました。</span></br>");
+				out.println("ID<strong>" + reid + "</strong><br/>");
+				out.println("password<strong>" + repassword + "</strong><br/>");
+				out.println("ユーザー名<strong>" + rename + "</strong><br/>");
+				out.println("年齢<strong>" + reage + "</strong><br/>");
+				out.println("性別<strong>" + regender + "</strong><br/>");
+				out.println("自己紹介<strong>" + reselfinf + "</strong><br/>");
 
 				out.println("<form method=\"POST\" action=\"Board.jsp\" name=\"Forward\">");
 				out.println("<input type=\"submit\" value=\"掲示板へ進む\" class=\"btn\"/>");
