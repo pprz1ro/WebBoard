@@ -76,7 +76,7 @@ public class Deletecom extends HttpServlet {
 		/* デザインを付与 */
 		out.println("<html>");
 		out.println("<head>");
-		out.println("<title>削除画面</title>");
+		out.println("<title>Write Delete</title>");
 		out.println("<style> body "
 				+ "{ background-color: #9F9F9F} "
 				+ ".boardwall {"
