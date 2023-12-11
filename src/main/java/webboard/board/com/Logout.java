@@ -29,7 +29,7 @@ public class Logout extends HttpServlet {
 
 		out.println("<html>");
 		out.println("<head>");
-		out.println("<title>ログアウト完了画面</title>");
+		out.println("<title>Logout Completed</title>");
 		out.println("<style> body "
 				+ "{ background-color: #9F9F9F;} "
 				+ ".boardwall {"
