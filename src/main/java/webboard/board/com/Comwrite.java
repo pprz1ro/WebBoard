@@ -80,7 +80,7 @@ public class Comwrite extends HttpServlet {
 		if (math > 400) {
 			out.println("<html>");
 			out.println("<head>");
-			out.println("<title>確認画面</title>");
+			out.println("<title>Write Failure</title>");
 			out.println("</head>");
 			out.println("<body>");
 			out.println("<div class=\"boardwall\">");
@@ -164,7 +164,7 @@ public class Comwrite extends HttpServlet {
 			/* HTML、CSS */
 			out.println("<html>");
 			out.println("<head>");
-			out.println("<title>書き込み完了画面</title>");
+			out.println("<title>Wrting Completed</title>");
 			out.println("</head>");
 			out.println("<body>");
 			out.println("<div class=\"boardwall\">");
